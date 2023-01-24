@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head }}
+</head>
+
+<body class="overflow-h">
+    <div class="preloader">
+        <div class="preloader__spinner "></div>
+        <img class="preloader__logo" src="./../assets/images/preloader-logo.svg" alt="logo">
+        <div class="preloader__progress-line"></div>
+    </div>
+
+    <div class="wrapper">
+        {{> header }}
+        <main class="content">{{> body }}</main>
+        {{> footer }}
+    </div>
+
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- smooth show blocks  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'phone',
+            once: true,
+        });
+    </script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
