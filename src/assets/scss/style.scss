@@ -219,7 +219,6 @@
 
   &__nav-left {
 
-    // @include adaptiv-value('padding-left',160,-80,0);
     @include breakpoint(1024px) {
       display: none;
     }
@@ -229,7 +228,6 @@
 
   &__nav-right {
 
-    // @include adaptiv-value('padding-left',30,50,0);
     @include breakpoint(1024px) {
       display: none;
     }
@@ -371,8 +369,6 @@
   // .intro__img-wrapper
 
   &__img-wrapper {
-    // @include adaptiv-value('width',480,280,0);
-    // @include adaptiv-value('height',690,400,0);
     @include adaptiv-value('width', 480, 130, 0);
     @include adaptiv-value('height', 690, 250, 0);
     position: absolute;
@@ -382,9 +378,6 @@
 
     @include breakpoint(1024px) {
       right: -50px;
-      // @include adaptiv-value1024-320('top',570,430,0);
-      // left: 50%;
-      // transform: translateX(-50%);
     }
 
     @include breakpoint(768px) {
@@ -633,7 +626,6 @@
     background-size: 100% 15px;
     background-position: center top;
     @include adaptiv-value('padding-top', 25, 13, 0);
-    // @include adaptiv-value('margin-bottom',70,30,0);
     max-width: 1000px;
 
     @include breakpoint(768px) {
@@ -741,11 +733,7 @@
     }
 
     &:last-child {
-      img {
-        // background-image: url('./../images/about-border.png');
-        // background-repeat: no-repeat;
-        // background-size: 100% 100%;
-      }
+     
 
       @include breakpoint(1024px) {
         margin: 0 auto;
@@ -836,7 +824,6 @@
       margin: 0 auto;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      // grid-template-rows: 45px auto auto auto 45px auto auto auto 45px auto auto auto 45px auto ;
 
       grid-template-areas:
         'roadmap__phase1'
@@ -885,7 +872,6 @@
         @include adaptiv-value('width', 10, 6, 0);
         @include adaptiv-value('height', 10, 6, 0);
         @include adaptiv-value('margin-right', 12, 8, 0);
-        // background-image: url('./../images/roadmap-circle1.svg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top left;
@@ -967,7 +953,6 @@
 
 
     &::before {
-      // background: rgba(217, 217, 217, 0.08);
       background-image: url('./../images/roadmap-border-top-1.png');
     }
 
@@ -1138,16 +1123,6 @@
     }
   }
 
-  // &__liney4-2{
-  //    display: none;
-  //    grid-area:roadmap__liney4-2 ;
-  //    text-align: center;
-
-  //    @include breakpoint(1024px){
-  //       display: block;
-  //    }
-  // }
-
   &__phase {
     @media (min-width: 1921px) {
       font-size: 30px;
@@ -1251,7 +1226,6 @@
       position: relative;
       width: 100%;
       height: 350px;
-      // @include adaptiv-value('height',350,200,0);
       background-repeat: no-repeat;
       background-size: 100% 100%, 90% 90%;
       background-position: 0 0, left 30% top 20%;
@@ -1263,7 +1237,6 @@
       @include breakpoint(1024px) {
         width: 300px;
         height: 400px;
-        // @include adaptiv-value1024-320('height',1000,400,0);
       }
     }
 
@@ -1354,7 +1327,6 @@
     right: 20px;
     opacity: 0;
     transition: opacity 0.5s;
-    // transform: translateY(-200%);
     cursor: pointer;
 
     @include breakpoint(1024px) {
@@ -1469,7 +1441,6 @@
   &__line-left {
     left: 0;
     bottom: 40px;
-    // @include adaptiv-value('bottom', 45, 40, 0);
   }
 
   &__line-right {
@@ -1482,8 +1453,6 @@
   &__slide {
     padding-left: 5px;
     padding-right: 5px;
-    //    display: flex;
-    //    justify-content: center;
     position: relative;
   }
 
@@ -1628,78 +1597,7 @@
     @include adaptiv-value('margin-bottom', 100, 40, 0);
   }
 
-  // // .faq__row
-
-  // &__row {
-  //    grid-template-columns: repeat(2,1fr);
-  //    @include adaptiv-value('column-gap',20,10,0);
-  //    @include adaptiv-value('row-gap',25,15,0);
-  //    grid-template-rows: 1fr 1fr 1fr;
-
-  //    @include breakpoint(768px){
-  //       grid-template-columns: 1fr;
-  //    }
-  // }
-
-  // // .faq__column
-
-  // &__column {
-  //    grid-template-rows: auto 1fr;
-  //    overflow: hidden;
-  //    position: relative;
-
-  //    &--active{
-  //       .faq__column-bottom{
-  //         transform: translateY(-20px);
-
-  //       }
-
-  //       .faq__column-top{
-  //          color:#150A2C;
-  //          background-image: url('./../images/faq-border-text-1-active.png');
-  //          transition: 1s;
-  //       }
-  //    }
-  // }
-
-  // // .faq__column-top
-
-  // &__column-top {
-  //    background: $linear3;
-  //    background-image: url('./../images/faq-border-text-1.png');
-  //    background-repeat: no-repeat;
-  //    background-size: 100% 100% ;
-  //    @include adaptiv-value('padding',25,15,0);
-  //    @include adaptiv-value('font-size',20,12,0);
-  //    @include adaptiv-value('line-height',20,12,0);
-  //    color: $b;
-  //    font-weight: 800;
-  //    cursor: pointer;
-
-  // }
-
-  // // .faq__column-bottom
-
-  // &__column-bottom {
-  //    background-image: url('./../images/faq-border-block.png');
-  //    background-repeat: no-repeat;
-  //    background-size: 100% 100% ;
-  //    @include adaptiv-value('padding-top',50,40,0);
-  //    @include adaptiv-value('padding-right',25,15,0);
-  //    @include adaptiv-value('padding-bottom',80,40,0);
-  //    @include adaptiv-value('padding-left',25,15,0);
-  //    @include adaptiv-value('font-size',16,12,0);
-  //    @include adaptiv-value('line-height',16,16,0);
-  //    color:#fff;
-  //    transition:transform 1s;
-  //    transform: translateY(-100%);
-  //    position: absolute;
-  //    top: -200%;
-  //    left: 0;
-
-  // }
-
-  // .questions__row
+  // .faq__row
 
   &__row {
     grid-template-columns: repeat(2, 1fr);
@@ -1711,7 +1609,7 @@
     }
   }
 
-  // .questions__item
+  // .faq__item
 
   &__item {
     max-height: 70px;
@@ -1725,7 +1623,7 @@
     }
   }
 
-  // .questions__column-visible
+  // .faq__column-visible
 
   &__column-visible {
     @media (min-width: 1921px) {
@@ -1784,7 +1682,6 @@
   }
 
   &__column-arrow {
-    // transform: rotate(0deg);
     transition: 0.5s;
 
     path {
@@ -1800,7 +1697,7 @@
     }
   }
 
-  // .questions__column-hide
+  // .faq__column-hide
 
   &__column-hide {
     background-image: url('./../images/faq-border-block.png');
@@ -1874,7 +1771,6 @@
 
   &__row {
     overflow: hidden;
-    // padding-right: 20px;
     grid-template-columns: 700px 1fr;
     @include adaptiv-value('gap', 40, 20, 0);
 
@@ -1931,8 +1827,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // width: 100%;
-    // height: 100%;
   }
 
   &__line-left {
@@ -2056,6 +1950,7 @@ top: 60px;
     @include adaptiv-value('padding-bottom', 20, 10, 0);
     margin-bottom: 5px;
   }
+  
 
   footer {
     @include adaptiv-value('font-size', 14, 12, 0);

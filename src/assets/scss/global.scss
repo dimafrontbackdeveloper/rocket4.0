@@ -214,8 +214,6 @@ body {
 .circle1 {
    @include adaptiv-value('width', 1350, 337, 0);
    @include adaptiv-value('height', 1100, 275, 0);
-   // left: 0;
-   // top: 0;
    left: 1.79%;
 top: 3.1%;
    transform: translate(-10%, -60%);
@@ -232,27 +230,6 @@ top: 3.1%;
    mix-blend-mode: color;
    top: -4.8%;
    right: -9%;
-
-   // &:nth-of-type(2) {
-   //   right: 0;
-   //   top: 0;
-   //   transform: translate(-10%, -30%);
-
-   //   @include breakpoint(768px) {
-   //     transform: translate(-10%, -10%);
-   //   }
-   // }
-
-   // &:nth-of-type(3) {
-   //   display: none;
-   //   top: 410px;
-   //   left: 0;
-   //   transform: translate(-10%, 0);
-
-   //   @include breakpoint(1024px) {
-   //     display: block;
-   //   }
-   // }
  }
 
 .circle-mobile{
@@ -302,17 +279,13 @@ top: 3.1%;
 
 .burger {
    position: relative;
-   // width: 20px;
-   // height: 16px;
 
    span {
       position: absolute;
       left: 0;
       width: 100%;
-      // height: 2px;
       border-radius: 5px;
       background: #fff;
-      // margin-bottom: 5px;
 
       &:nth-child(1) {
          top: 0;
