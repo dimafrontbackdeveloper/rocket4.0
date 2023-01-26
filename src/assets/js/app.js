@@ -7,6 +7,7 @@ import burgerMenu from './burgerMenu';
 import moveRocket from './rocketAnimation';
 import featuresAnimation from './featuresAnimation';
 import preloaderAnimation from './preloaderAnimation';
+import fixedHeaderAnimation from './fixedHeaderAnimation';
 
 teamSlider();
 mentionsSlider();
@@ -19,4 +20,5 @@ preloaderAnimation();
 window.addEventListener('scroll', () => {
   moveRocket();
   featuresAnimation();
+  fixedHeaderAnimation();
 });

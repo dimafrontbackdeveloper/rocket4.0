@@ -64,7 +64,7 @@
 
 .preloader {
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   top: 0;
   left: 0;
   width: 100vw;
@@ -128,6 +128,12 @@
 }
 
 .header {
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
 @media (min-width:1441px) {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -139,7 +145,6 @@
   background-repeat: no-repeat;
   background-size: 100% 20px;
   background-position: center bottom;
-  @include adaptiv-value('margin-bottom', 133, 55, 0);
   padding-left: 16px;
   padding-right: 25px;
 
@@ -157,6 +162,10 @@
   @include breakpoint(425px) {
     background-image: url('./../images/section-line-1-mobile.png');
     background-size: 100% 5px;
+  }
+
+  &--active{   
+    background: black;
   }
 
   // .header__nav
@@ -307,6 +316,7 @@
   background-repeat: no-repeat;
   background-size: 100% 20px;
   background-position: center bottom;
+  @include adaptiv-value('padding-top', 210, 130, 0);
   @include adaptiv-value('padding-bottom', 100, 50, 0);
   margin-bottom: 25px;
 
