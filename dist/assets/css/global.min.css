@@ -110,8 +110,20 @@ body {
 }
 
 .logo {
+  transform: translateX(30%);
   width: calc(30px + 23 * ((100vw - 320px) / 1120));
   height: calc(36px + 29 * ((100vw - 320px) / 1120));
+}
+@media (min-width: 1441px) {
+  .logo {
+    width: 53px;
+    height: 65px;
+  }
+}
+.logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .title {

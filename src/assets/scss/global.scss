@@ -121,8 +121,20 @@ body {
 
 
 .logo {
+   @media (min-width:1441px) {
+         width: 53px;
+         height: 65px;
+   }
+   transform: translateX(30%);
+
    @include adaptiv-value('width', 53, 30, 0);
    @include adaptiv-value('height', 65, 36, 0);
+
+   a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+   }
 }
 
 .title {

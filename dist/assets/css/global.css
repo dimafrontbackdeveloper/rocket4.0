@@ -152,6 +152,10 @@ body {
     color: #fff;
 }
 
+.on-hover-fix {
+    display: none;
+}
+
 .buttons {
     display: -ms-flexbox;
     display: flex;
