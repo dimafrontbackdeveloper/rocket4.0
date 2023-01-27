@@ -1,23 +1,22 @@
-const burgerMenu = () => {
-  // burger menu
-  const burger = document.querySelector('.burger');
-  const closeBurger = document.querySelector('.close-burger');
-  const burgerMenu = document.querySelector('.burger-menu');
-  const headerNavItems = document.querySelectorAll('.header__nav-item');
-  const burgerMenuTransition = 700; // 0.7
+const burger = document.querySelector('.burger');
+const closeBurger = document.querySelector('.close-burger');
+const burgerMenuEl = document.querySelector('.burger-menu');
+const headerNavItems = document.querySelectorAll('.header__nav-item');
+const burgerMenuTransition = 700; // 0.7
 
+const burgerMenu = () => {
   const openBurgerMenu = () => {
-    burgerMenu.classList.add('burger-menu--active');
-    burgerMenu.style.zIndex = '5';
+    burgerMenuEl.classList.add('burger-menu--active');
+    burgerMenuEl.style.zIndex = '5';
     document.body.classList.add('overflow-h');
   };
 
   const closeBurgerMenu = () => {
-    burgerMenu.classList.remove('burger-menu--active');
+    burgerMenuEl.classList.remove('burger-menu--active');
     document.body.classList.remove('overflow-h');
 
     setTimeout(() => {
-      burgerMenu.style.zIndex = '-1';
+      burgerMenuEl.style.zIndex = '-1';
     }, burgerMenuTransition);
   };
 

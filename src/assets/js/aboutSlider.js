@@ -1,10 +1,9 @@
-const aboutSlider = () => {
-  // about slider
-  const aboutSliderContainer = document.querySelector('.about-slider-container');
-  const aboutSliderWrapper = document.querySelector('.about-slider-wrapper');
-  const aboutSwiperPagination = aboutSliderContainer.querySelector('.swiper-pagination');
-  const aboutItems = document.querySelectorAll('.about__item');
+const aboutSliderContainer = document.querySelector('.about-slider-container');
+const aboutSliderWrapper = document.querySelector('.about-slider-wrapper');
+const aboutSwiperPagination = aboutSliderContainer.querySelector('.swiper-pagination');
+const aboutItems = document.querySelectorAll('.about__item');
 
+const aboutSlider = () => {
   document.addEventListener('DOMContentLoaded', async () => {
     const aboutSwiperPaginationBullet = aboutSliderContainer.querySelectorAll(
       '.swiper-pagination-bullet',

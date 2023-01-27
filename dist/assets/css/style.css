@@ -799,8 +799,8 @@ body {
     top: 0;
     left: 0;
     z-index: 5;
-    padding-top: calc(10px + 10 * ((100vw - 320px) / 1120));
-    padding-bottom: calc(50px + -40 * ((100vw - 320px) / 1120));
+    padding-top: calc(20px + 0 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(20px + 0 * ((100vw - 320px) / 1120));
     background-image: url("./../images/section-line-1.png");
     background-repeat: no-repeat;
     background-size: 100% 20px;
@@ -820,14 +820,12 @@ body {
 @media screen and (max-width: 1024px) {
     .header {
         background-position: center top 20px;
-        padding-top: 35px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
         background-position: center top 12px;
-        padding-top: 25px;
         background-size: 100% 10px;
     }
 }
@@ -2421,6 +2419,9 @@ body {
 @media screen and (max-width: 1024px) {
     .faq__row {
         grid-template-columns: 1fr;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 

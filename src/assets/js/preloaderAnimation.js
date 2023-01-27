@@ -1,13 +1,13 @@
+const preloader = document.querySelector('.preloader');
+const preloaderProgressLine = document.querySelector('.preloader__progress-line');
+
+let widthOfPreloaderProgressLine = 10;
+const transitionOfPreloader = 1000; // 1s
+let isLoadedPage = false;
+
+preloaderProgressLine.style.width = `${widthOfPreloaderProgressLine}%`;
+
 const preloaderAnimation = () => {
-  const preloader = document.querySelector('.preloader');
-  const preloaderProgressLine = document.querySelector('.preloader__progress-line');
-
-  let widthOfPreloaderProgressLine = 10;
-  const transitionOfPreloader = 1000; // 1s
-  let isLoadedPage = false;
-
-  preloaderProgressLine.style.width = `${widthOfPreloaderProgressLine}%`;
-
   function hidePreloader() {
     preloader.classList.add('preloader--hide');
     document.body.classList.remove('overflow-h');

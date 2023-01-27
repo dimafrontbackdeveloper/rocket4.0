@@ -8,8 +8,6 @@ featuresColumnCenterImages[1].style.opacity = '0';
 
 const featuresColumnCenterRectTop = featuresColumnCenter.getBoundingClientRect().top;
 const featuresColumnCenterHeight = featuresColumnCenter.offsetHeight;
-const wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-const featuresImages = ['./assets/images/phone1.png', './assets/images/phone2.png'];
 
 const featuresAnimation = () => {
   const bottomPositionOfFeaturesColumnCenter =

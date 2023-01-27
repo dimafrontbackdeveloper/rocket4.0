@@ -1,12 +1,12 @@
+// faq
+const faqItems = document.querySelectorAll('.faq__item');
+const faqColumnVisibles = document.querySelectorAll('.faq__column-visible');
+const faqColumnHides = document.querySelectorAll('.faq__column-hide');
+const faqColumnArrow = document.querySelectorAll('.faq__column-arrow');
+
+const faqColumnHideTransitionOpacity = 500; // 0.5
+
 const faqSlider = () => {
-  // faq
-  const faqItems = document.querySelectorAll('.faq__item');
-  const faqColumnVisibles = document.querySelectorAll('.faq__column-visible');
-  const faqColumnHides = document.querySelectorAll('.faq__column-hide');
-  const faqColumnArrow = document.querySelectorAll('.faq__column-arrow');
-
-  const faqColumnHideTransitionOpacity = 500; // 0.5
-
   faqColumnVisibles.forEach((el, i) => {
     el.addEventListener('click', (e) => {
       if (el.classList.contains('faq__column-visible--active')) {

@@ -1,11 +1,11 @@
-const blogSlider = () => {
-  const blogSliderContainer = document.querySelector('.blog-slider-container');
-  const blogSliderWrapper = document.querySelector('.blog-slider-wrapper');
-  const blogSwiperButtonTeamNext = blogSliderContainer.querySelector('.swiper-button-next');
-  const blogSwiperButtonTeamPrev = blogSliderContainer.querySelector('.swiper-button-prev');
-  const blogSliderButtonTeamNext = blogSliderContainer.querySelector('.slider-button-next');
-  const blogSliderButtonTeamPrev = blogSliderContainer.querySelector('.slider-button-prev');
+const blogSliderContainer = document.querySelector('.blog-slider-container');
+const blogSliderWrapper = document.querySelector('.blog-slider-wrapper');
+const blogSwiperButtonTeamNext = blogSliderContainer.querySelector('.swiper-button-next');
+const blogSwiperButtonTeamPrev = blogSliderContainer.querySelector('.swiper-button-prev');
+const blogSliderButtonTeamNext = blogSliderContainer.querySelector('.slider-button-next');
+const blogSliderButtonTeamPrev = blogSliderContainer.querySelector('.slider-button-prev');
 
+const blogSlider = () => {
   new Swiper(blogSliderContainer, {
     navigation: {
       nextEl: blogSwiperButtonTeamNext,
