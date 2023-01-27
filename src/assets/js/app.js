@@ -8,6 +8,7 @@ import moveRocket from './rocketAnimation';
 import featuresAnimation from './featuresAnimation';
 import preloaderAnimation from './preloaderAnimation';
 import fixedHeaderAnimation from './fixedHeaderAnimation';
+import setActiveNavItemAnimation from './setActiveNavItemAnimation';
 
 teamSlider();
 mentionsSlider();
@@ -21,4 +22,5 @@ window.addEventListener('scroll', () => {
   moveRocket();
   featuresAnimation();
   fixedHeaderAnimation();
+  setActiveNavItemAnimation();
 });
