@@ -415,7 +415,6 @@ body {
 
 .burger-menu--active {
     top: 0;
-    z-index: 3;
 }
 
 .burger-menu__row {

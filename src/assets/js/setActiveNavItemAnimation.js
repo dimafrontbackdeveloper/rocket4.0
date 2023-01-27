@@ -21,6 +21,10 @@ const setActiveNavItemAnimation = () => {
         'header__nav-item--active',
       );
       headerNavItems[scrolledSectionIndexesLastIndex]?.classList.add('header__nav-item--active');
+      burgerNavItems[scrolledSectionIndexesLastIndex - 1]?.classList.remove(
+        'header__nav-item--active',
+      );
+      burgerNavItems[scrolledSectionIndexesLastIndex]?.classList.add('header__nav-item--active');
     }
 
     // if scrolled to top and we scrolled element we need to delete index at scrolledSectionIndexes
@@ -35,6 +39,10 @@ const setActiveNavItemAnimation = () => {
         'header__nav-item--active',
       );
       headerNavItems[scrolledSectionIndexesLastIndex]?.classList.add('header__nav-item--active');
+      burgerNavItems[scrolledSectionIndexesLastIndex + 1]?.classList.remove(
+        'header__nav-item--active',
+      );
+      burgerNavItems[scrolledSectionIndexesLastIndex]?.classList.add('header__nav-item--active');
     }
   });
 };

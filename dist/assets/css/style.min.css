@@ -752,10 +752,16 @@ body {
   font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
   line-height: 30px;
 }
-.header__nav li:hover::before, .header__nav li:hover::after {
+.header__nav li:last-child {
+  margin-right: 0px;
+}
+.header__nav li a {
+  color: #fff;
+}
+.header__nav li a:hover::before, .header__nav li a:hover::after {
   opacity: 1;
 }
-.header__nav li::before, .header__nav li::after {
+.header__nav li a::before, .header__nav li a::after {
   content: "";
   display: block;
   position: absolute;
@@ -764,27 +770,25 @@ body {
   opacity: 0;
   transition: 0.3s;
 }
-.header__nav li::before {
+.header__nav li a::before {
   top: 0;
   left: 0;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   transform: translate(-100%);
 }
-.header__nav li::after {
+.header__nav li a::after {
   bottom: 0;
   right: 0;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   transform: translate(100%);
 }
-.header__nav li:last-child {
-  margin-right: 0px;
+.header__nav-item a {
+  position: relative;
+  display: inline-block;
 }
-.header__nav li a {
-  color: #fff;
-}
-.header__nav-item--active::before, .header__nav-item--active::after {
+.header__nav-item--active a::before, .header__nav-item--active a::after {
   content: "";
   display: block;
   position: absolute;
@@ -793,14 +797,14 @@ body {
   opacity: 1 !important;
   transition: 0.3s;
 }
-.header__nav-item--active::before {
+.header__nav-item--active a::before {
   top: 0;
   left: 0;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   transform: translate(-100%);
 }
-.header__nav-item--active::after {
+.header__nav-item--active a::after {
   bottom: 0;
   right: 0;
   border-right: 2px solid #fff;
