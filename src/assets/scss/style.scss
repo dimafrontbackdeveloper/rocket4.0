@@ -141,8 +141,8 @@
     padding-bottom: 10px;
 }
 
-  @include adaptiv-value('padding-top', 20, 10, 0);
-  @include adaptiv-value('padding-bottom', 10, 50, 0);
+  @include adaptiv-value('padding-top', 20, 20, 0);
+  @include adaptiv-value('padding-bottom', 20, 20, 0);
   background-image: url('./../images/section-line-1.png');
   background-repeat: no-repeat;
   background-size: 100% 20px;
@@ -153,12 +153,10 @@
 
   @include breakpoint(1024px) {
     background-position: center top 20px;
-    padding-top: 35px;
   }
 
   @include breakpoint(768px) {
     background-position: center top 12px;
-    padding-top: 25px;
     background-size: 100% 10px;
   }
 
@@ -1687,6 +1685,9 @@
 
     @include breakpoint(1024px) {
       grid-template-columns: 1fr;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
     }
   }
 
