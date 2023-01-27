@@ -545,7 +545,6 @@ body {
 }
 .burger-menu--active {
   top: 0;
-  z-index: 3;
 }
 .burger-menu__row {
   grid-template-rows: auto 1fr auto auto auto;
