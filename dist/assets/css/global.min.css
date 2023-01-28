@@ -111,13 +111,13 @@ body {
 
 .logo {
   transform: translateX(30%);
-  width: calc(30px + 23 * ((100vw - 320px) / 1120));
-  height: calc(36px + 29 * ((100vw - 320px) / 1120));
+  width: calc(30px + 8 * ((100vw - 320px) / 1120));
+  height: calc(36px + 11 * ((100vw - 320px) / 1120));
 }
 @media (min-width: 1441px) {
   .logo {
-    width: 53px;
-    height: 65px;
+    width: 38px;
+    height: 47px;
   }
 }
 .logo a {
