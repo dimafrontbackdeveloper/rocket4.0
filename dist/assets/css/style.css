@@ -801,7 +801,7 @@ body {
     z-index: 5;
     padding-top: calc(20px + 0 * ((100vw - 320px) / 1120));
     padding-bottom: calc(20px + 0 * ((100vw - 320px) / 1120));
-    border-bottom: 1px solid linear-gradient(262.3deg, rgba(0, 0, 0, 0.5) 17.69%, rgba(0, 20, 66, 0.5) 101.45%);
+    border-bottom: 2px solid #426067;
     padding-left: 16px;
     padding-right: 25px;
 }
